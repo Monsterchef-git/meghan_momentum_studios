@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-stone-50 text-neutral-900;
+  }
+}
+
+/* Animaciones Hippie/Psicodélicas */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Elementos decorativos */
+.mandala-bg {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(249, 115, 22, 0.1) 0%, transparent 50%);
+}
+
+.flower-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d2bab0' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Efectos de texto */
+.text-gradient-sunset {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fdba74 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-earth {
+  background: linear-gradient(135deg, #7d927d 0%, #bfa094 50%, #eab308 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Bordes decorativos */
+.border-hippie {
+  border-image: linear-gradient(135deg, #f97316, #a855f7, #eab308) 1;
+}
+
+/* Hover effects */
+.hover-float:hover {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Botones estilo hippie */
+.btn-hippie {
+  @apply px-8 py-3 rounded-full font-medium transition-all duration-300;
+  @apply bg-gradient-sunset text-white;
+  @apply hover:scale-105;
+}
+
+.btn-hippie:hover {
+  box-shadow: 0 4px 20px rgba(191, 160, 148, 0.3), 0 8px 40px rgba(249, 115, 22, 0.2);
+}
+
+.btn-outline-hippie {
+  @apply px-8 py-3 rounded-full font-medium transition-all duration-300;
+  @apply border-2 border-terracotta-500 text-terracotta-700;
+  @apply hover:bg-terracotta-500 hover:text-white;
+}
+
+/* Cards con efecto orgánico */
+.card-hippie {
+  @apply bg-white rounded-3xl p-8 shadow-lg;
+  @apply border-2 border-terracotta-100;
+  @apply transition-all duration-500;
+}
+
+.card-hippie:hover {
+  @apply shadow-hippie transform -translate-y-2;
+}
+
+/* ========================================
+   NEW: Fade-in animations for About page
+   ======================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fade-in-delay-1 {
+  animation: fadeIn 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeIn 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fadeIn 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-4 {
+  animation: fadeIn 0.8s ease-out 0.8s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-5 {
+  animation: fadeIn 0.8s ease-out 1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-6 {
+  animation: fadeIn 0.8s ease-out 1.2s forwards;
+  opacity: 0;
+}
+
+/* ========================================
+   NEW: Prose styling for biography content
+   ======================================== */
+
+.prose {
+  @apply text-neutral-700;
+}
+
+.prose h2 {
+  @apply font-serif text-neutral-900 mb-4 mt-12;
+}
+
+.prose p {
+  @apply mb-6;
+}
+
+.prose blockquote {
+  @apply border-neutral-900 text-neutral-700 italic my-8;
+}
+
+/* ========================================
+   NEW: Accessibility improvements
+   ======================================== */
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+  @apply outline-2 outline-offset-2 outline-amber-600;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-fade-in,
+  .animate-fade-in-delay-1,
+  .animate-fade-in-delay-2,
+  .animate-fade-in-delay-3,
+  .animate-fade-in-delay-4,
+  .animate-fade-in-delay-5,
+  .animate-fade-in-delay-6,
+  .hover-float {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
