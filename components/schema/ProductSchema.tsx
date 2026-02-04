@@ -1,5 +1,3 @@
-import Script from 'next/script';
-
 interface ProductSchemaProps {
     name: string;
     description?: string;

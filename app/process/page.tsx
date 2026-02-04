@@ -259,12 +259,6 @@ export default function Process() {
             >
               View Available Works
             </a>
-            <a
-              href="/commissions"
-              className="px-10 py-3 border border-neutral-900 hover:bg-neutral-900 hover:text-white transition-all duration-300 text-lg rounded-full"
-            >
-              Commission a Piece
-            </a>
           </div>
         </div>
       </section>

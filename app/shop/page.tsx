@@ -290,23 +290,6 @@ export default function Shop() {
           </div>
         </div>
       </section>
-
-      <section className="py-20 bg-neutral-50 border-t border-neutral-200">
-        <div className="container mx-auto px-6 text-center max-w-2xl">
-          <h2 className="font-serif text-4xl font-light text-neutral-900 mb-6">
-            Don&apos;t see what you&apos;re looking for?
-          </h2>
-          <p className="font-sans text-neutral-600 mb-8">
-            Commission a custom piece created specifically for your space
-          </p>
-          <a
-            href="/commissions"
-            className="inline-block px-10 py-3 border border-neutral-900 text-neutral-900 font-sans text-sm uppercase tracking-widest hover:bg-neutral-900 hover:text-white transition-all duration-500"
-          >
-            Learn About Commissions
-          </a>
-        </div>
-      </section>
     </>
   );
 }

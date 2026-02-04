@@ -58,9 +58,6 @@ export default function Home() {
             <a href="/shop" className="btn-hippie">
               Explore the Gallery ✨
             </a>
-            <a href="/commissions" className="btn-outline-hippie">
-              Custom Vibes
-            </a>
           </div>
         </div>
       </section>
@@ -199,29 +196,6 @@ export default function Home() {
             <div className="absolute -top-8 -right-8 w-32 h-32 border-4 border-sunset-400 rounded-full opacity-40"></div>
             <div className="absolute -bottom-8 -left-8 w-24 h-24 border-4 border-plum-400 rounded-full opacity-40"></div>
           </div>
-        </div>
-      </section>
-
-      {/* Commissions CTA */}
-      <section className="py-24 px-6 bg-gradient-sunset relative overflow-hidden">
-        {/* Pattern overlay */}
-        <div className="absolute inset-0 flower-pattern opacity-20"></div>
-
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="font-display text-6xl text-white mb-6">
-            Commission a Sacred Piece
-          </h2>
-          <p className="text-2xl text-orange-50 mb-12 font-serif italic">
-            Honoring nature through intentional art
-          </p>
-          <p className="text-lg text-orange-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Whether you're seeking custom fiber art, nature-preserved jewelry with Colorado
-            treasures, or a memorial piece honoring a beloved creature, I create with reverence
-            and intention. Each commission tells a unique story of connection to the natural world.
-          </p>
-          <a href="/commissions" className="inline-block px-10 py-4 bg-white text-sunset-600 rounded-full font-semibold text-lg hover:bg-sage-50 transition-all hover:scale-105 shadow-lg">
-            Start Your Custom Journey
-          </a>
         </div>
       </section>
     </div>

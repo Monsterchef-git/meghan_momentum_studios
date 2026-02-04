@@ -189,15 +189,9 @@ export default function About() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="/shop"
-            className="px-10 py-3 border border-neutral-900 hover:bg-neutral-900 hover:text-white transition-all duration-300 text-lg"
-          >
-            View Available Works
-          </a>
-          <a
-            href="/commissions"
             className="px-10 py-3 bg-neutral-900 text-white hover:bg-neutral-800 transition-all duration-300 text-lg"
           >
-            Commission a Piece
+            View Available Works
           </a>
         </div>
       </section>

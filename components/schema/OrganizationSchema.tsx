@@ -1,5 +1,3 @@
-import Script from 'next/script';
-
 export default function OrganizationSchema() {
     const schema = {
         "@context": "https://schema.org",
@@ -23,7 +21,7 @@ export default function OrganizationSchema() {
         "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Customer Service",
-            "email": "contact@meghansmomentum.com"
+            "email": "meghanmboston@gmail.com"
         },
         "sameAs": [
             "https://www.instagram.com/meghansmomentum/"
