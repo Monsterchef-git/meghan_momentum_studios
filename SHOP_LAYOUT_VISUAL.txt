@@ -1,0 +1,113 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                        SHOP PAGE - ASYMMETRIC LAYOUT                           ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                           HERO HEADER                                         │
+│  Available Works                                                              │
+│  Each piece is a unique celebration of nature...                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+  ✨ RESIN JEWELRY
+  Delicate botanical specimens and ethically sourced bones...
+────────────────────────────────────────────────────────────────────────────────
+
+┌─────────────────────────────12 COLUMNS─────────────────────────────────┐
+│                                                                          │
+│  ┌──────────────────────7cols──────────────┐  ┌─────5cols──────┐      │
+│  │                                          │  │                 │      │
+│  │  Item 1: LARGE LANDSCAPE (4:3)          │  │  Item 2: MED    │      │
+│  │  Bushy Tailed Wood Rat Mandible...      │  │  SQUARE         │      │
+│  │                                          │  │  Mouse Jaw...   │      │
+│  └──────────────────────────────────────────┘  └─────────────────┘      │
+│                                                                          │
+│  ┌───4cols────┐  ┌─────5cols──────┐  ┌──3cols──┐                       │
+│  │            │  │                 │  │         │                       │
+│  │ Item 3:    │  │  Item 4: MED    │  │ Item 5: │                       │
+│  │ SMALL      │  │  SQUARE         │  │ SMALL   │                       │
+│  │ PORTRAIT   │  │  Wood Rat...    │  │ PORT    │                       │
+│  │ (3:4)      │  │                 │  │ (3:4)   │                       │
+│  └────────────┘  └─────────────────┘  └─────────┘                       │
+│                                                                          │
+│  ┌──────────────────6cols─────────────┐                                 │
+│  │                                     │                                 │
+│  │  Item 6: MEDIUM-LARGE LANDSCAPE     │                                 │
+│  │  Complete Mouse Skull...            │                                 │
+│  └─────────────────────────────────────┘                                 │
+│                                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+  ✨ CROCHET
+  Size-inclusive fiber art pieces handcrafted with premium yarns...
+────────────────────────────────────────────────────────────────────────────────
+
+[Same 6-item asymmetric pattern repeats]
+┌─────────────────────────────12 COLUMNS─────────────────────────────────┐
+│  Tea and Honey, Artist Pallet, Texas Sunset, Lilies, etc.               │
+└──────────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+  ✨ BOTTLE JEWELRY
+  Miniature terrariums and botanical curiosities captured in glass...
+────────────────────────────────────────────────────────────────────────────────
+
+[Same 6-item asymmetric pattern with placeholders]
+┌─────────────────────────────12 COLUMNS─────────────────────────────────┐
+│  Botanical Bottle, Terrarium Pendant, Wildflower Charm, etc.            │
+│  (All marked "Coming Soon")                                              │
+└──────────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+  ✨ PAINTED SKULLS
+  Ethically sourced bones transformed into vibrant memento mori...
+────────────────────────────────────────────────────────────────────────────────
+
+[Same 6-item asymmetric pattern, mix of real + placeholders]
+┌─────────────────────────────12 COLUMNS─────────────────────────────────┐
+│  Sunlight on the Snow, Feeling Blue, + 4 placeholders                   │
+└──────────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+KEY DESIGN PRINCIPLES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ ASYMMETRY: No two rows look the same - creates visual interest
+✓ RHYTHM: Pattern of 7-5-4-5-3-6 columns repeats per category
+✓ VARIETY: Mix of landscape, square, and portrait aspect ratios
+✓ BREATHING ROOM: 32px (mt-32) between category sections
+✓ HIERARCHY: Category titles (text-5xl) > Product titles (text-2xl)
+✓ ELEGANCE: Cormorant Garamond serif + neutral palette
+✓ HOVER EFFECTS: Subtle scale-105 zoom on images
+✓ RESPONSIVE: Full-width on mobile, asymmetric on desktop
+
+MOBILE BEHAVIOR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+On mobile (< 768px), all items stack vertically at full width:
+
+┌────────────────┐
+│                │
+│   Product 1    │
+│                │
+└────────────────┘
+┌────────────────┐
+│                │
+│   Product 2    │
+│                │
+└────────────────┘
+┌────────────────┐
+│                │
+│   Product 3    │
+│                │
+└────────────────┘
+
+But aspect ratios are preserved (landscape/square/portrait)
+for visual variety even in the stacked view.
