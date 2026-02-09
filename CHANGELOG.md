@@ -43,7 +43,7 @@
 - No console errors or warnings
 
 ### ✅ Quality Assurance
-- Tested on all pages: Home, About, Process, Shop, Commissions, Contact
+- Tested on all pages: Home, About, Process, Shop, Contact
 - Verified header consistency across all routes
 - Confirmed all navigation links work properly
 - Validated image loading and performance
@@ -54,7 +54,7 @@
 
 ### Initial Release
 - Complete website redesign with bohemian/hippie aesthetic
-- Six main pages: Home, About, Process, Shop, Commissions, Contact
+- Five main pages: Home, About, Process, Shop, Contact
 - Custom color palette: Terracotta, Sage, Mustard, Sunset, Plum
 - Typography: Playfair Display, Outfit, Righteous
 - Animations: Float, spin-slow, pulse-soft, fade-in

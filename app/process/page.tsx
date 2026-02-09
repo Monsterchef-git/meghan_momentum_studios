@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Artistic Process | Meghan\'s Momentum',
@@ -42,11 +44,12 @@ export default function Process() {
                 and self-love.
               </p>
             </div>
-            <div className="aspect-square rounded-2xl shadow-lg overflow-hidden">
-              <img
+            <div className="aspect-square rounded-2xl shadow-lg overflow-hidden relative">
+              <Image
                 src="/images/process_fiber_arts.jpg"
                 alt="Fiber arts creation process"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
@@ -88,11 +91,12 @@ export default function Process() {
       <section className="py-20 bg-gradient-to-br from-amber-50 via-neutral-50 to-plum-50">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="order-2 md:order-1 aspect-square rounded-2xl shadow-lg overflow-hidden">
-              <img
+            <div className="order-2 md:order-1 aspect-square rounded-2xl shadow-lg overflow-hidden relative">
+              <Image
                 src="/images/process_jewelry.jpg"
                 alt="Nature-preserved jewelry creation process"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="order-1 md:order-2">
@@ -253,12 +257,12 @@ export default function Process() {
             between humans and the natural world.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/shop"
               className="px-10 py-3 bg-neutral-900 text-white hover:bg-neutral-800 transition-all duration-300 text-lg rounded-full"
             >
               View Available Works
-            </a>
+            </Link>
           </div>
         </div>
       </section>

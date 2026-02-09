@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -187,12 +188,12 @@ export default function About() {
           Each piece tells a story of Colorado's wilderness, honoring the delicate balance between humanity and nature.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
+          <Link
             href="/shop"
             className="px-10 py-3 bg-neutral-900 text-white hover:bg-neutral-800 transition-all duration-300 text-lg"
           >
             View Available Works
-          </a>
+          </Link>
         </div>
       </section>
     </main>

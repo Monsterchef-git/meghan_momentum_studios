@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "Meghan's Momentum | Nature-Inspired Art from Colorado",
@@ -29,14 +31,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Estilo Hippie */}
+      {/* Hero Section - Hippie Style */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden flower-pattern">
-        {/* Elementos decorativos flotantes */}
+        {/* Floating decorative elements */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-sunset-400/20 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-plum-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
 
         <div className="relative z-10 text-center px-6 max-w-5xl">
-          {/* Mandala decorativo */}
+          {/* Decorative mandala */}
           <div className="mb-8 flex justify-center">
             <div className="w-24 h-24 border-4 border-terracotta-400 rounded-full animate-spin-slow opacity-60"></div>
           </div>
@@ -55,14 +57,14 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row gap-6 justify-center">
-            <a href="/shop" className="btn-hippie">
+            <Link href="/shop" className="btn-hippie">
               Explore the Gallery ✨
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Gallery Grid - Estilo Orgánico */}
+      {/* Gallery Grid - Organic Style */}
       <section className="py-24 px-6 bg-sage-50/30">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-display text-5xl text-center mb-4 text-gradient-earth">
@@ -72,15 +74,16 @@ export default function Home() {
             Fiber arts, preserved nature, and sacred art from Colorado's wilderness
           </p>
 
-          {/* Grid asimétrico con hover effects */}
+          {/* Asymmetric grid with hover effects */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* Large featured - Texas Sunset Crochet */}
             <div className="card-hippie hover-float md:col-span-2 md:row-span-2">
               <div className="aspect-square bg-gradient-to-br from-sunset-200 via-terracotta-200 to-plum-200 rounded-2xl mb-4 relative overflow-hidden group">
-                <img
+                <Image
                   src="/images/crochet/texas_sunset_acrylic.jpg"
                   alt="Texas Sunset - Premium Acrylic Crochet"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-psychedelic opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
               </div>
@@ -91,10 +94,11 @@ export default function Home() {
             {/* Wood Rat Mandible Jewelry */}
             <div className="card-hippie hover-float">
               <div className="aspect-square bg-gradient-to-br from-sunset-200 via-terracotta-200 to-plum-200 rounded-2xl mb-4 relative overflow-hidden group">
-                <img
+                <Image
                   src="/images/jewelry/wood_rat_mandible_fern.jpg"
                   alt="Wood Rat Mandible and Fern in Resin"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-psychedelic opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
               </div>
@@ -105,10 +109,11 @@ export default function Home() {
             {/* Sunlight on the Snow Taxidermy */}
             <div className="card-hippie hover-float">
               <div className="aspect-square bg-gradient-to-br from-sunset-200 via-terracotta-200 to-plum-200 rounded-2xl mb-4 relative overflow-hidden group">
-                <img
+                <Image
                   src="/images/taxidermy/sunlight_snow_raccoon.jpg"
                   alt="Sunlight on the Snow - Raccoon Skull Art"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-psychedelic opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
               </div>
@@ -119,10 +124,11 @@ export default function Home() {
             {/* Aspen Garden Butterfly */}
             <div className="card-hippie hover-float md:col-span-2">
               <div className="aspect-square bg-gradient-to-br from-sunset-200 via-terracotta-200 to-plum-200 rounded-2xl mb-4 relative overflow-hidden group">
-                <img
+                <Image
                   src="/images/taxidermy/aspen_garden_butterfly.jpg"
                   alt="In The Aspen Garden - Pressed Flowers & Butterfly"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-psychedelic opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
               </div>
@@ -133,10 +139,11 @@ export default function Home() {
             {/* Artist Pallet Crochet */}
             <div className="card-hippie hover-float">
               <div className="aspect-square bg-gradient-to-br from-sunset-200 via-terracotta-200 to-plum-200 rounded-2xl mb-4 relative overflow-hidden group">
-                <img
+                <Image
                   src="/images/crochet/artist_pallet_acrylic.jpg"
                   alt="Artist Pallet - Colorful Acrylic Crochet"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-psychedelic opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
               </div>
@@ -147,10 +154,11 @@ export default function Home() {
             {/* Mouse Jaw Jewelry */}
             <div className="card-hippie hover-float">
               <div className="aspect-square bg-gradient-to-br from-sunset-200 via-terracotta-200 to-plum-200 rounded-2xl mb-4 relative overflow-hidden group">
-                <img
+                <Image
                   src="/images/jewelry/mouse_jaw_allium.jpg"
                   alt="Mouse Jaw & Allium Flower in Resin"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-psychedelic opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
               </div>
@@ -161,7 +169,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Preview - Con elementos bohemios */}
+      {/* About Preview - With bohemian elements */}
       <section className="py-24 px-6 mandala-bg overflow-hidden">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div>
@@ -179,20 +187,21 @@ export default function Home() {
               with wildlife. Each piece is a statement: respect the natural world, for this was
               their home first.
             </p>
-            <a href="/about" className="btn-outline-hippie">
+            <Link href="/about" className="btn-outline-hippie">
               Learn More About My Journey 🦋
-            </a>
+            </Link>
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-full shadow-hippie overflow-hidden">
-              <img
+            <div className="relative aspect-square rounded-full shadow-hippie overflow-hidden">
+              <Image
                 src="/images/about_preview.jpg"
                 alt="Meghan's artisan jewelry work"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
-            {/* Círculos decorativos */}
+            {/* Decorative circles */}
             <div className="absolute -top-8 -right-8 w-32 h-32 border-4 border-sunset-400 rounded-full opacity-40"></div>
             <div className="absolute -bottom-8 -left-8 w-24 h-24 border-4 border-plum-400 rounded-full opacity-40"></div>
           </div>

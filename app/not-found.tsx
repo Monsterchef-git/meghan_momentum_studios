@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: '404 - Page Not Found | Meghan\'s Momentum',
@@ -12,13 +13,13 @@ export const metadata: Metadata = {
 export default function NotFound() {
     return (
         <div className="min-h-screen flex items-center justify-center overflow-hidden flower-pattern">
-            {/* Elementos decorativos flotantes */}
+            {/* Floating decorative elements */}
             <div className="absolute top-20 left-10 w-32 h-32 bg-sunset-400/20 rounded-full blur-3xl animate-float"></div>
             <div className="absolute bottom-20 right-10 w-40 h-40 bg-plum-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
             <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-terracotta-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
 
             <div className="relative z-10 text-center px-6 max-w-3xl">
-                {/* Mandala decorativo */}
+                {/* Decorative mandala */}
                 <div className="mb-8 flex justify-center">
                     <div className="w-24 h-24 border-4 border-terracotta-400 rounded-full animate-spin-slow opacity-60"></div>
                 </div>
@@ -47,12 +48,12 @@ export default function NotFound() {
 
                 {/* Navigation buttons */}
                 <div className="flex flex-col md:flex-row gap-6 justify-center">
-                    <a href="/" className="btn-hippie">
+                    <Link href="/" className="btn-hippie">
                         Return Home 🌻
-                    </a>
-                    <a href="/shop" className="btn-outline-hippie">
+                    </Link>
+                    <Link href="/shop" className="btn-outline-hippie">
                         Explore the Gallery
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Additional decorative element */}
