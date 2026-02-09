@@ -50,7 +50,7 @@ export default function RootLayout({
         {/* Header */}
         <header className="sticky top-0 z-50 bg-white border-b border-neutral-200">
           <div className="relative">
-            {/* Pinceladas decorativas de fondo */}
+            {/* Decorative background brushstrokes */}
             <div className="absolute inset-0 opacity-30 overflow-hidden pointer-events-none">
               <Image
                 src="/images/brushstrokes-top.png"
@@ -61,7 +61,7 @@ export default function RootLayout({
               />
             </div>
 
-            {/* Contenido del header */}
+            {/* Header content */}
             <div className="relative max-w-7xl mx-auto px-6 py-4">
               <div className="flex items-center justify-between">
                 <Link href="/" className="font-serif text-xl text-neutral-900 hover:text-amber-700 transition-colors">
@@ -100,10 +100,10 @@ export default function RootLayout({
 
             {/* Navigation Links - Centered */}
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-10">
-              <a href="/about" className="text-neutral-300 hover:text-amber-400 transition-colors">My Journey</a>
-              <a href="/process" className="text-neutral-300 hover:text-amber-400 transition-colors">The Process</a>
-              <a href="/shop" className="text-neutral-300 hover:text-amber-400 transition-colors">Available Works</a>
-              <a href="/contact" className="text-neutral-300 hover:text-amber-400 transition-colors">Contact</a>
+              <Link href="/about" className="text-neutral-300 hover:text-amber-400 transition-colors">My Journey</Link>
+              <Link href="/process" className="text-neutral-300 hover:text-amber-400 transition-colors">The Process</Link>
+              <Link href="/shop" className="text-neutral-300 hover:text-amber-400 transition-colors">Available Works</Link>
+              <Link href="/contact" className="text-neutral-300 hover:text-amber-400 transition-colors">Contact</Link>
             </div>
 
             {/* Social Links - Centered */}

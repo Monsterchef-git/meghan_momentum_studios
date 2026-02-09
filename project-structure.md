@@ -13,8 +13,6 @@ meghan-momentum-studios/
 │   │   └── page.tsx             # Creative process page
 │   ├── shop/
 │   │   └── page.tsx             # Available artworks
-│   ├── commissions/
-│   │   └── page.tsx             # Commission info & pricing
 │   └── contact/
 │       └── page.tsx             # Contact form
 ├── public/
@@ -59,7 +57,7 @@ const righteous = Righteous({ ... })        // Display headers
 - White background with decorative brushstrokes at 30% opacity
 - Horizontal layout: brand title left, navigation links right
 - Amber-700 hover states on all links
-- Links: Home, About, Process, Shop, Commissions, Contact
+- Links: Home, About, Process, Shop, Contact
 
 **Footer**:
 - Gradient background (gradient-earth)
@@ -93,11 +91,6 @@ const righteous = Righteous({ ... })        // Display headers
    - Warm greeting with emojis
    - Link to full About page
 
-4. **Commissions CTA**:
-   - Gradient background with pattern overlay
-   - Casual, inviting copy
-   - Prominent CTA button
-
 ---
 
 ### About Page (`app/about/page.tsx`)
@@ -129,7 +122,7 @@ const righteous = Righteous({ ... })        // Display headers
    - White text on neutral-900 background
 
 5. **Call-to-Action**:
-   - Links to Shop and Commissions
+   - Links to Shop
    - Responsive button layout
 
 **Animations**: Progressive fade-ins (delay-1 through delay-6)
@@ -326,7 +319,6 @@ npm run lint     # Run ESLint
 - ✨ Floating blurred circles
 - 🎨 Organic gallery grid
 - 💛 Bohemian about preview
-- 🌈 Vibrant commissions CTA
 
 ### About Page Features
 - 📸 Hero with artist photo
@@ -334,7 +326,7 @@ npm run lint     # Run ESLint
 - 🦋 Progressive animations
 - 📜 Featured poem section
 - 💬 Blockquote styling
-- 🔗 CTA to Shop & Commissions
+- 🔗 CTA to Shop
 
 ### Navigation Features
 - 🎨 Artistic brushstroke background

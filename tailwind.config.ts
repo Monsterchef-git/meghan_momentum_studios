@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Paleta Hippie/Bohemia
+        // Hippie/Bohemian Palette
         terracotta: {
           50: '#fdf8f6',
           100: '#f2e8e5',

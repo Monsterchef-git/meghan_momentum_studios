@@ -26,7 +26,6 @@ Open http://localhost:3000
 - **About** (/about) - Complete artist biography with photo and featured poem
 - **Process** (/process) - Creative journey
 - **Shop** (/shop) - Available artworks
-- **Commissions** (/commissions) - Custom work pricing
 - **Contact** (/contact) - Contact form
 
 ## 🎨 Design System
@@ -135,7 +134,6 @@ meghan-momentum-studios/
 │   ├── about/page.tsx     # Artist biography
 │   ├── process/page.tsx   # Creative process
 │   ├── shop/page.tsx      # Available works
-│   ├── commissions/page.tsx
 │   └── contact/page.tsx
 ├── public/
 │   └── images/            # Artwork images
@@ -155,5 +153,8 @@ meghan-momentum-studios/
 - **Accessible**: WCAG compliant with focus states and reduced motion
 - **Performance**: Optimized images and animations
 - **Progressive Enhancement**: Graceful degradation for older browsers
+
+## 📝 Note on Commissions
+The "Commissions" functionality has been intentionally removed from this version as the client does not currently require it.
 
 Built with love, peace, and good vibes 💛✌️
